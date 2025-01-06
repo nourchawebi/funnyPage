@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fedigift",
+            "outputPath": "dist/fedigift/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -21,6 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/_redirects",
               "src/favicon.ico",
               "src/assets"
             ],
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

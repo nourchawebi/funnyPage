@@ -1,0 +1,229 @@
+/* General layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff2f7; /* Light pink background */
+  color: #f44336; /* Heart-red color */
+  text-align: center;
+}
+
+/* Title design for Valentine’s theme */
+.valentine-title {
+  font-size: 36px;
+  color: #e91e63;
+  font-family: 'Brush Script MT', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Heart-shaped buttons */
+button.heart-button {
+  width: 100%;
+  max-width: 200px;
+  height: 100px;
+  background-color: #ff69b4; /* Pink */
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px auto;
+}
+
+button.heart-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.6); /* Soft pink glow */
+}
+
+/* Styling for the "Click Me" button with pink shadow */
+button.click-me {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff80bf;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button.click-me:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 105, 180, 1);
+}
+
+/* Moving button (Noo button) */
+.moving-button {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  background-color: #ff69b4; /* Soft pink */
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Hamburger message styling */
+.hamburger-message {
+  font-size: 24px;
+  color: #ff6347; /* Tomato red */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.hamburger-message i {
+  color: #ff6347;
+  margin-right: 10px;
+}
+
+/* Message box */
+.message {
+  font-size: 18px;
+  color: #ff6347;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.message p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Heart question styling */
+.heart-question {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Styling for Yes and No buttons */
+button.yes-no-button {
+
+  width: 100%;
+  max-width: 200px;
+  padding: 15px 30px;
+ margin-left: -200px;
+  font-size: 18px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 25px;
+
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  transition: all 0.3s ease;
+}
+
+button.yes-no-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 1);
+}
+button.yes-no-buttonnour {
+  width: 100%;
+  max-width: 200px;
+  padding: 15px 30px;
+  margin: 10px auto;
+  font-size: 18px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 25px;
+  display: inline;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+button.yes-no-buttonnour:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 105, 180, 1);
+}
+
+
+.button{
+  width: 50px;
+  height: 50px;
+  top:50%;
+  position: fixed;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -50px;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+.button:hover{
+
+}
+.active#heart:before,.active#heart:after{
+  background: red !important;
+}
+#heart {
+  width: 100px;
+  height: 90px;
+  transition: background 0.5s ease;
+}
+#heart:before,
+#heart:after {
+  transition: background 0.5s ease;
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: dimgrey;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+}
+video {
+  border: 5px solid #e91e63;
+  border-radius: 10px;
+}
+.dynamic-button {
+
+  width: 100%;
+  max-width: 200px;
+  padding: 15px 30px;
+
+  font-size: 18px;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  transition: all 0.3s ease;
+  position: absolute;
+ margin-top:5.5%;
+  cursor: pointer;
+  margin-left:5%;
+  transition: transform 0s, top 0s, left 0s;
+}
+.dynamic-button:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+
+
+}
